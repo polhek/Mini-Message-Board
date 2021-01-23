@@ -1,1 +1,3 @@
 # Mini-Message-Board
+
+Just a simple app made for learning ExpressJS. A message board with post and get request... 

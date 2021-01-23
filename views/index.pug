@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  header
+    h1 This is #{title}
+    p Welcome to #{title}
+  main
+    each message in messages
+      section.message-title
+        h2= message.text
+        p= message.user
+        p= message.added
+    a(href=`http://localhost:${process.env.PORT || 3000}/new`)
+      button.button-link Add new message!
+

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    header
+        h1 This is the form to add new message!
+        p Here you can add whatever message you want!
+    main.form-main
+        section.form-container
+            form(method="POST" action='/new' )
+                p
+                    | Message text:
+                    input(type="text", placeholder='Message text goes here', name="text", id="text" )
+                    | Text author:
+                    input(type="text", placeholder="Authors name goes here", name="user", id="user")
+                button.add-text-button(type='submit', id="submit-button")= "Add new message"
